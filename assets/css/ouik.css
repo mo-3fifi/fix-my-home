@@ -1,0 +1,81 @@
+.ouik{
+background-color: blue;  
+    text-align: center;
+    padding: 20px;
+    
+    
+}
+#registor {
+    display: grid;
+
+    grid-gap: 15px;
+}
+.frm {
+    padding: 10px;
+    border: 0;
+    border-radius: 5px;
+    background-color: #fff;
+    font-family: 'Roboto', sans-serif;
+    color: #3E3D4E;
+
+
+    
+}
+.frmee{
+    padding: 10px 50px;
+    border: 0;
+    border-radius: 5px;
+    background-color: #fff;
+    font-family: 'Roboto', sans-serif;
+    color: #929292;
+    width: 100%;
+
+
+    
+}
+
+.frme{
+    padding: 10px;
+    text-align: center;
+    background-color: #00fcff;
+    color: #5658e5;
+    font-weight: bold;
+    font-size: 15px;
+    border: 0;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    
+}
+.phone{
+  display: flex;
+}
+.phone img{
+    position: absolute;
+    width: 5%;
+    height: 4%;
+    padding-top: 5px;
+    padding-bottom: 2px;
+}
+@media (max-width:767px){
+  #registor{
+    grid-template-columns: 1fr ;
+
+  
+  } 
+  
+}
+  @media (min-width:768px) and (max-width:991px){
+  #registor{
+  
+    grid-template-columns: 1fr 1fr ;
+
+  
+  }
+}
+  @media(min-width:992px){
+    #registor{
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+
+  }
+  }
+

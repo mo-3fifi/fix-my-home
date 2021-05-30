@@ -1,0 +1,28 @@
+/* START STYLING OF CUSTOMERS */
+.swiper-container.customers{
+         font-family: 'Raleway' , sans-serif;
+}
+.swiper-slide.customers--item{
+         display:grid;
+         grid-row-gap:20px;
+         text-align:center;
+}
+.name{
+         font-size: 20px;
+         font-weight: bold
+}
+.swiper-pagination.customers-controler{
+         position:static;
+         margin-top:35px
+}
+.swiper-slide.customers--item .image{
+         background-color: #DDD;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         padding: 30px;
+         margin: auto;
+         border-radius: 50%;
+         line-height: 50px
+}
+/* END STYLING OF CUSTOMERS */

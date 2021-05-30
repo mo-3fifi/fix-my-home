@@ -1,0 +1,100 @@
+/* START STYLING of Feature */
+.features{
+   display: grid;
+   grid-template-columns: auto auto auto auto;
+   grid-row-gap: 20px;
+   grid-column-gap:20px;
+   padding:50px 17%;
+   background-image:url('../img/features-background.jpg');
+   /* box-sizing:border-box */
+}
+.feature-logo , .feature-title , .feature-description{
+   /* background-color: #F00; */
+}
+.feature-title{
+    display:inline-block;
+    font-size: 20px;
+    font-weight: bold;
+}
+.feature-item{
+    display:grid;
+    grid-auto-flow: row;
+    grid-row-gap: 20px;
+    border:1px solid #FFF;
+    color:#FFF;
+    text-align:center;
+    padding:20px;
+    border-radius:5px;
+    font-family:'Raleway', sans-serif;
+}
+.feature-item:hover{
+    background-color:#FFF;
+    color:#5658A5;
+    border:none;
+    border-top:5px solid #00fcff;
+    cursor:pointer;
+}
+.feature-logo{
+      width:69px;
+      height:76px;
+      background-color:#FFF;
+      -webkit-mask-repeat:no-repeat;
+      mask-repeat:no-repeat;
+      margin:auto
+}
+.features .feature-item:hover .feature-logo{
+       background-color:#5658A5
+}
+.feature-logo.free-to-use{
+  -webkit-mask-image:url('../img/free-to-use.png');
+  mask-image:url('../img/free-to-use.png');
+}
+.feature-logo.unique-Design{
+  -webkit-mask-image:url('../img/unique-Design.png');
+  mask-image:url('../img/unique-Design.png');
+}
+.feature-logo.cross-platform{
+  -webkit-mask-image:url('../img/cross-platform.png');
+  mask-image:url('../img/cross-platform.png');
+}
+.feature-logo.user-friendly{
+  -webkit-mask-image:url('../img/user-friendly.png');
+  mask-image:url('../img/user-friendly.png');
+}
+.feature-logo.notifications{
+  -webkit-mask-image:url('../img/notifications.png');
+  mask-image:url('../img/notifications.png');
+}
+.feature-logo.free-updates{
+  -webkit-mask-image:url('../img/free-updates.png');
+  mask-image:url('../img/free-updates.png');
+}
+.feature-logo.fast-support{
+  -webkit-mask-image:url('../img/fast-support.png');
+  mask-image:url('../img/fast-support.png');
+}
+.feature-logo.multi-language{
+  -webkit-mask-image:url('../img/multi-language.png');
+  mask-image:url('../img/multi-language.png');
+}
+@media(min-width:325px){
+   .features{
+       grid-template-columns: auto
+    }
+}
+@media(min-width:768px){
+   .features{
+       grid-template-columns: auto auto
+    }
+}
+@media(min-width:1200px){
+   .features{
+       grid-template-columns: auto auto auto
+    }
+}
+@media(min-width:1300px){
+   .features{
+       grid-template-columns: auto auto auto auto
+    }
+}
+/* END STYLING of Feature */

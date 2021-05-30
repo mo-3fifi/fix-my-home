@@ -1,0 +1,52 @@
+
+body {
+    display: block;
+    margin: 0;
+}
+
+.branche{
+    display: grid;
+    overflow: hidden;
+   
+}
+.text{
+    margin-top: 50px;
+}
+.text .title h6{
+    color:#3E3D4E;
+    font-family: 'Raleway', sans-serif;
+    font-size: 50px;
+    margin: 10px 0  0 0;
+    text-align: left;
+   }
+   .text p{
+    color:#3E3D4E;
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
+    font-size: 25px;
+    margin: 0;
+   }
+   @media (max-width:767px){
+    .branche{
+            grid-row-gap: 30px;
+  
+  }  
+  }
+  @media (min-width:768px) and (max-width:991px){
+      .branche{
+  
+            grid-row-gap: 30px;
+  
+  }
+  
+    
+  }
+  @media(min-width:992px){
+      .branche{
+     
+          grid-auto-flow: column;
+          grid-column-gap: 10px;
+  
+  
+  }
+  }

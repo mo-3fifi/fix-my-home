@@ -1,0 +1,40 @@
+
+
+
+
+
+.section.theme--dark-wave{
+    background-image: url(../../files/images/dark-wave.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+.section.theme--light-wave{
+    background-image: url(../../files/images/light-wave.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+.section.theme--features{
+    padding-top: 142px;
+    padding-bottom: 164px;
+    background-image: url(../../files/images/features-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+.section.theme--dark{
+    background-color: #232465;
+}
+.section.theme--light{
+    background-color: #5658A5;
+}
+
+
+.section.size-container {
+    padding-right: calc((100% - 92%) / 2);
+    padding-left: calc((100% - (92)) / 2);
+  }
+  @media (min-width: calc(960px * (1 + ((100 - 92) / 100)))) {
+  .section.size-container {
+    padding-right: calc((100% - 960px) / 2);
+    padding-left: calc((100% - 960px) / 2);
+  }
+  }

@@ -1,0 +1,150 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+hr {
+    margin: 0;
+    border-width: 0;
+}
+
+/* START subscription */
+
+
+.type--subscription {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-rows: min-content;
+    grid-gap: 32px;
+    background-color: rgb(156, 156, 154);
+
+}
+.subscription{
+    width: 100%;
+    display: grid;
+    justify-content: start;
+    align-content: start;
+    align-items: start;
+    justify-items: start;
+    grid-gap: 32px;
+
+}
+.subscription__header{
+    width: 100%;
+    display: grid;
+    grid-gap: 24px;
+    justify-content: start;
+    align-content: start;
+}
+.subscription__header h2{
+    font-size: 40px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+}
+.subscription__header p{
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+
+}
+.subscription__field{
+    width: 100%;
+    display: grid;
+    align-content: start;
+    align-items: start;
+    grid-gap: 32px;
+}
+.subscription__field .field__title{
+    font-size: 28px;
+    font-family: 'Raleway', sans-serif;
+}
+.field__content{
+}
+.subscription__form{
+    display: grid;
+    grid-gap: 16px;
+    grid-auto-rows: auto;
+
+}
+.field{
+    padding-top: 18px;
+    padding-bottom: 18px;
+    border-radius: 6px;
+    outline: none;
+    border-style: none;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+
+}
+[dir="rtl"] .field {
+    padding-right: 12px;
+}
+[dir="ltr"] .field{
+    padding-left: 12px;
+}
+
+.category{ }
+.class-number{ }
+.field-btn{
+  align-self: end;
+  justify-self: end;
+}
+input[type="submit"]{
+
+    padding: 16px 44px;
+    border-radius: 8px;
+    outline: none;
+    border-style: none;
+    background-color: #5658A5;
+    font-size: 18px;
+    color: #00fcff;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+}
+
+.type--subscription .image{}
+
+.type--subscription .image img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 840px){
+    .type--subscription .image{
+        display: none;
+    }
+    .field-btn{
+        margin: auto;
+    }
+
+}
+
+/* END SUBSCRIPTION */

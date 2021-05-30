@@ -1,0 +1,155 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+hr {
+    margin: 0;
+    border-width: 0;
+}
+
+/* START OUR-SERVICES */
+
+
+.type--our-services {
+    position: relative;
+    background: #eee;
+}
+
+.swiper-container {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    padding-top: 64px;
+    padding-bottom: 64px;
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    /* Center slide text vertically */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    border-radius: 8px;
+}
+
+.service--title {
+    margin-top: 32px;
+
+}
+
+.swiper-slide {
+    transform: scale(0.6);
+    color: #000;
+    opacity: 0.2;
+    /* width: 280px !important;*/
+    height: 248px !important; 
+}
+.swiper-slide img{
+}
+.swiper-slide.swiper-slide-active {
+    transform: scale(1);
+    background-color: #5658a5;
+    color: #FFF;
+    opacity: 1;
+}
+
+.swiper-slide.swiper-slide-next,
+.swiper-slide.swiper-slide-prev {
+    opacity: .5;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    position: absolute;
+    top: 50%;
+    width: 34px;
+    height: 34px;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    margin-top: -22px;
+    z-index: 10;
+    cursor: pointer;
+    border-radius: 50%;
+
+}
+
+.swiper-button-next img,
+.swiper-button-prev img {
+    width: 50%;
+}
+
+.swiper-button-next,
+.swiper-container-rtl .swiper-button-prev {
+    background-image: none;
+    background-color: #5658a5;
+    right: 20%;
+    left: auto;
+
+}
+
+.swiper-button-prev,
+.swiper-container-rtl .swiper-button-next {
+    background-image: none;
+    background-color: #00FCFF;
+    left: 20%;
+    right: auto;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.active {
+    display: block !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

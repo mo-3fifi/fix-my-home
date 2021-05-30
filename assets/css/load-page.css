@@ -1,0 +1,101 @@
+
+/* #5658A5  primum */
+/* #232465 second */
+body{
+        padding:0;
+        margin:0
+}
+@font-face{
+        font-family:'SegoeUI';
+        src:url(../fonts/SegoeUI.ttf);
+}
+.load--page{
+        background-image: linear-gradient(to bottom , #5658A5 , #00fcff );
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height:100vh;
+        transition: all 1s ease-in-out;
+        z-index:5;
+        /* display:none */
+}
+
+.content{
+        width:50%;
+        color:#FFF;
+        margin:auto;
+        display: grid;
+        justify-content: center;
+        grid-row-gap:20px
+}
+.logo{
+        width:87px;
+        height:95px;
+        background-image:url('../img/logo--icon.png');
+        background-position:50% 50%;
+        background-size:cover;
+        margin: 63px auto 0;
+}
+.brand--name{
+        font-size:50px;
+        font-weight:bold;
+        text-align: center;
+        font-family:'Raleway' , sans-serif;
+}
+.brand--name .part--two{
+        color: #00fcff
+}
+.welcome-message p {
+        max-width: 370px;
+        line-height: 38px;
+        text-align: center;
+        font-size: 24px;
+        font-family: 'SegoeUI' , sans-serif;
+}
+.login--account{
+        display:flex;
+        justify-content:space-around;
+        font-family:'Raleway' , sans-serif;
+        font-weight: bold;
+}
+.technical , .user{
+        display:grid;
+        grid-auto-rows: 1fr 1fr;
+        grid-row-gap: 20px
+}
+.account--image{
+        background:#FFF;
+        padding:24px;
+        text-align:center;
+        border-radius:18px
+}
+.account--name{
+        text-align:center
+}
+.account--link{
+        color:inherit;
+        text-decoration:none
+}
+.video{
+        height:100vh;
+        position:relative;
+}
+.my-video{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+}
+.video-play{
+        width:100px;
+        height:100px;
+        position:absolute;
+        top:50%;
+        left:50%;
+        background-image:url('../img/video-play.png');
+        background-position:center center;
+        background-repeat:no-repeat;
+        z-index:999;
+}
+.video-play:hover{
+        cursor:pointer;
+}

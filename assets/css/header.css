@@ -1,0 +1,199 @@
+/* #00fcff لبني */
+/* #5658A5  primum */
+/* #232465 second */
+/* #3E3D4E branches */
+/* #5A4c9E
+    #38BDDD
+    home-choose */
+body{
+     margin:0
+}
+.container{
+}
+.header{
+     background:#5658A5;
+     color:#FFF;
+     position:fixed;
+     top:0;
+     left:0;
+     right:0;
+     padding:0 10%;
+     z-index:100
+}
+.header--component{
+     display: grid;
+     grid-auto-flow: column;
+     justify-content: space-between;
+     box-sizing: border-box;
+
+}
+.logo{
+     display: grid;
+     grid-template-columns: auto auto;
+     grid-gap: 10px;
+     align-items: center;
+     font-family: 'Raleway', sans-serif;
+     font-weight:bold;
+     font-size:20px
+}
+.title {
+      line-height:30px
+}
+.title--part_two{
+      color:#00FCFF
+  }
+.list--divisions{
+       font-family: 'Roboto', sans-serif;
+}
+ .list--divisions .menu-list-drop{
+       margin:20px;
+       position:relative
+}
+.list--divisions .menu-list-drop:hover{
+    cursor:pointer
+}
+.list--divisions .menu-list-drop span{
+      display:block;
+      width: 33px;
+      height: 3px;
+      margin: 7px;
+      background-color:#FFF
+}
+.list--divisions .basic--list{
+       list-style-type:none;
+       display:flex;
+       justify-content:space-between;
+       flex-wrap:wrap;
+}
+.list--divisions .basic--list .basic--list_item{
+       margin: 10px;
+       display: inline-block;
+       padding-bottom:10px
+}
+.list--divisions .basic--list .basic--list_item a , a{
+       color:inherit;
+       text-decoration: none
+}
+.cover{
+      background-image: url(../img/cover-background.png);
+      background-origin: content-box;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+      top: -200px;
+      padding-top: 200px;
+}
+.cover--component{
+       display: grid;
+       grid-auto-flow: column;
+       grid-column-gap: 20px;
+       justify-content: center;
+       align-items: center;
+       box-sizing: border-box;
+       padding: 0 10%;
+       margin-top:200px;
+       color:#FFF
+}
+.cover--image{
+   text-align:center
+}
+.video-link{
+      display:flex;
+      align-items:center;
+      font-size:21px;
+      font-weight:bold
+
+}
+.cover--description{
+  padding-right:85px;
+}
+h1{
+  display:inline-block;
+  font-family: 'Raleway', sans-serif;
+  font-size: 40px
+}
+p{
+  font-family: 'Roboto', sans-serif;
+}
+.video-link{
+  font-family: 'Roboto', sans-serif;
+}
+.video-span{
+     margin-left:16px
+}
+@media (max-width:886px){
+     .menu-list{
+            position: absolute;
+            left:-100%;
+            width: 100%;
+            padding:10% 0;
+            background: #000;
+            transition:all 1s ease-in-out
+     }
+      .menu-list .basic--list{
+            min-height: 100%;
+            flex-direction: column;
+            align-items: center;
+      }
+      .menu-list .basic--list .basic--list_item{
+            position:relative;
+            margin: 23px;
+      }
+      .basic--list_item::after{
+            content: '';
+            display: block;
+            position: absolute;
+            top: 48px;
+            left: -176px;
+            width: 398px;
+            height: 1px;
+            background-color: #8f8f8f;
+      }
+      .basic--list_item:last-child::after{
+            content:'';
+            display:none
+      }
+      .basic--list_item:nth-of-type(3)::after{
+           left:-160px
+      }
+      .basic--list_item:nth-of-type(4)::after{
+           left:-182px
+      }
+      .basic--list_item:nth-of-type(5)::after{
+           left:-164px
+      }
+      .menu-list.active{
+            position: absolute;
+            left:0;
+            width: 100%;
+            background:#5658A5;
+      }
+      .list--divisions .basic--list .basic--list_item:hover{
+            color:#00fcff
+      }
+      .cover{
+        background-attachment:fixed;
+      }
+      .cover--component{
+          grid-auto-flow:row;
+      }
+      .cover--description {
+         padding-right:0;
+         text-align: center;
+    }
+    .video-link{
+       justify-content: center;
+    }
+}
+@media(min-width:886px){
+      .menu-list-drop{
+            display:none
+      }
+      .list--divisions .basic--list .basic--list_item:hover{
+            box-sizing:border-box;
+            border-bottom: 3px solid #DDD;
+      }
+      .basic--list_gap{
+            display:none
+      }
+}

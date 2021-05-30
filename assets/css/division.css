@@ -1,0 +1,24 @@
+/* font-family:'Raleway', sans-serif; */
+/* font-family:'Roboto', sans-serif; */
+.division{
+      display: grid;
+      grid-row-gap: 20px;
+      text-align: center;
+      width: 80%;
+      margin:50px auto 20px;
+}
+.title{
+      font-family:'Roboto', sans-serif;
+      font-size: 20px;
+      font-weight:bold;
+}
+.description{
+      display:inline-block;
+      font-family:'Raleway', sans-serif;
+}
+.theme--dark-wave .division{
+      color:#FFF
+}
+.theme--light-wave .division{
+      color:#000
+}

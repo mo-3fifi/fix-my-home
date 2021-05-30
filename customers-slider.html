@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <style></style>
+       <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+       <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+       <link rel="stylesheet" href="assets/css/swiper.min.css"/>
+       <link rel="stylesheet" type="text/css" href="assets/css/star-rating-svg.css">
+       <link rel="stylesheet" href="assets/css/customers-slider.css"/>
+  </head>
+  <body>
+      <div class="swiper-container customers">
+          <div class="swiper-wrapper customers--items">
+              <div class="swiper-slide customers--item">
+                      <div class="image">
+                          <img src="files/images/customer.png"/>
+                      </div>
+                      <div class="name">
+                         <span>Ahmed Ali</span>
+                      </div>
+                      <div class="rate" data-rating="2.5"></div>
+                      <div class="description">Lorem Ipsum has been the industry's standard dummy text ever since the 1500Lorem Ipsum has been the industry's standard dummy text ever since the 1500</div>
+              </div>
+              <div class="swiper-slide customers--item">
+                      <div class="image">
+                          <img src="files/images/customer.png"/>
+                      </div>
+                      <div class="name">
+                         <span>Ahmed Ali</span>
+                      </div>
+                      <div class="rate" data-rating="2.5"></div>
+                      <div class="description">Lorem Ipsum has been the industry's standard dummy text ever since the 1500Lorem Ipsum has been the industry's standard dummy text ever since the 1500</div>
+              </div>
+              <div class="swiper-slide customers--item">
+                      <div class="image">
+                          <img src="files/images/customer.png"/>
+                      </div>
+                      <div class="name">
+                         <span>Ahmed Ali</span>
+                      </div>
+                      <div class="rate" data-rating="2.5"></div>
+                      <div class="description">Lorem Ipsum has been the industry's standard dummy text ever since the 1500Lorem Ipsum has been the industry's standard dummy text ever since the 1500</div>
+              </div>
+              <div class="swiper-slide customers--item">
+                      <div class="image">
+                          <img src="files/images/customer.png"/>
+                      </div>
+                      <div class="name">
+                         <span>Ahmed Ali</span>
+                      </div>
+                      <div class="rate" data-rating="2.5"></div>
+                      <div class="description">Lorem Ipsum has been the industry's standard dummy text ever since the 1500Lorem Ipsum has been the industry's standard dummy text ever since the 1500</div>
+              </div>
+              <div class="swiper-slide customers--item">
+                      <div class="image">
+                          <img src="files/images/customer.png"/>
+                      </div>
+                      <div class="name">
+                         <span>Ahmed Ali</span>
+                      </div>
+                      <div class="rate" data-rating="2.5"></div>
+                      <div class="description">Lorem Ipsum has been the industry's standard dummy text ever since the 1500Lorem Ipsum has been the industry's standard dummy text ever since the 1500</div>
+              </div>
+              <div class="swiper-slide customers--item">
+                      <div class="image">
+                          <img src="files/images/customer.png"/>
+                      </div>
+                      <div class="name">
+                         <span>Ahmed Ali</span>
+                      </div>
+                      <div class="rate" data-rating="2.5"></div>
+                      <div class="description">Lorem Ipsum has been the industry's standard dummy text ever since the 1500Lorem Ipsum has been the industry's standard dummy text ever since the 1500</div>
+              </div>
+              <div class="swiper-slide customers--item">
+                      <div class="image">
+                          <img src="files/images/customer.png"/>
+                      </div>
+                      <div class="name">
+                         <span>Ahmed Ali</span>
+                      </div>
+                      <div class="rate" data-rating="2.5"></div>
+                      <div class="description">Lorem Ipsum has been the industry's standard dummy text ever since the 1500Lorem Ipsum has been the industry's standard dummy text ever since the 1500</div>
+              </div>
+              <div class="swiper-slide customers--item">
+                      <div class="image">
+                          <img src="files/images/customer.png"/>
+                      </div>
+                      <div class="name">
+                         <span>Ahmed Ali</span>
+                      </div>
+                      <div class="rate" data-rating="2.5"></div>
+                      <div class="description">Lorem Ipsum has been the industry's standard dummy text ever since the 1500Lorem Ipsum has been the industry's standard dummy text ever since the 1500</div>
+              </div>
+              <div class="swiper-slide customers--item">
+                      <div class="image">
+                          <img src="files/images/customer.png"/>
+                      </div>
+                      <div class="name">
+                         <span>Ahmed Ali</span>
+                      </div>
+                      <div class="rate" data-rating="2.5"></div>
+                      <div class="description">Lorem Ipsum has been the industry's standard dummy text ever since the 1500Lorem Ipsum has been the industry's standard dummy text ever since the 1500</div>
+              </div>
+              <div class="swiper-slide customers--item">
+                      <div class="image">
+                          <img src="files/images/customer.png"/>
+                      </div>
+                      <div class="name">
+                         <span>Ahmed Ali</span>
+                      </div>
+                      <div class="rate" data-rating="2.5"></div>
+                      <div class="description">Lorem Ipsum has been the industry's standard dummy text ever since the 1500Lorem Ipsum has been the industry's standard dummy text ever since the 1500</div>
+              </div>
+          </div>
+          <div class="swiper-pagination customers-controler"></div>
+      </div>
+      <script src="assets/js/customers-slider.js"></script>
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+      <script>
+          var swiper = new Swiper('.swiper-container', {
+          slidesPerView: 3,
+          spaceBetween: 30,
+          pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+      });
+  </script>
+     <script src="assets/js/jquery.star-rating-svg.js"></script>
+     <script>
+        $(".rate").starRating({
+              totalstars: 5,
+              starShap: 'rounded',
+              starSize: 20,
+              emptyColor: 'lightgray',
+              hoverColor: '#ffbf00',
+              activeColor: '#ffbf00',
+              ratedColor: '#ffbf00',
+              useGradient: false
+          })
+      </script>
+  </body>
+</html>
